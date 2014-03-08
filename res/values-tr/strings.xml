@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2013 The OmniROM Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">OmniSwitch</string>
+    <string name="status_bar_recent_remove_item_title">Dur</string>
+    <string name="status_bar_recent_inspect_item_title">Uygulama Bilgisi</string>
+    <string name="recents_settings_title">OmniSwitch</string>
+    <string name="start_on_boot_title">Başlangıçta Çalıştır</string>
+    <string name="start_on_boot_summary">Cihaz başlatıldığında etkinlştirin ve çalıştırın</string>
+    <string name="opacity_title">Saydamlık</string>
+    <string name="opacity_summary">Uygulama görünümünde arka plan saydamlığı</string>
+    <string name="animate_title">Animasyon</string>
+    <string name="animate_title_summary">Uygulama görünümünü gizler/gösterir</string>
+    <string name="adjust_handle_title">Konum ve Boyut</string>
+    <string name="sc_drag_handle_title">Kaydırma kolu</string>
+    <string name="sc_drag_handle_body">\nUygulamayı açmak için yatay kaydırın veya uzun basın\nKapatmak için butonlardan birine veya dış alana basın</string>
+    <string name="sc_favorite_title">Favori Uygulamalar</string>
+    <string name="sc_favorite_body">\nFavori uygulamalar görünümünü etkinleştirin.</string>
+    <string name="icon_size_normal">Normal</string>
+    <string name="icon_size_small">Küçük</string>
+    <string name="icon_size_large">Büyük</string>
+    <string name="icon_size_title">Simge boyutu</string>
+    <string name="ok">Tamam</string>
+    <string name="cancel">İptal</string>
+    <string name="drag_handle_color_title">Renk</string>
+    <string name="drag_handle_color_dialog_title">Renk</string>
+    <string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> serbest</string>
+    <string name="service_foreground_processes"><xliff:g id="memory">%1$s</xliff:g> kullanımda</string>
+    <string name="show_rambar_title">Hafıza kullanımını göster</string>
+    <string name="show_rambar_summary">Serbest ve kullanımdaki (anlık) hafıza\'yı gösterir</string>
+    <string name="show_app_labels">Uygulama adını göster</string>
+    <string name="show_app_labels_summary">Uygulamalar, adı ve simgesiyle gösterilir</string>
+    <string name="category_overlay_title">Uygulama Görünümü</string>
+    <string name="category_drag_handle_title">Kaydırma Kolu</string>
+    <string name="category_favorite_title">Favoriler</string>
+    <string name="favorite_apps_config_title">Favorileri Yönetin</string>
+    <string name="favorite_apps_config_summary">Favori uygulamalarınızı seçin</string>
+    <string name="favorite_apps_add_dialog_title">Uygulama Ekleyin</string>
+    <string name="favorite_add">Ekle\u2026</string>
+    <string name="location_left" translatable="false">&lt;&lt;</string>
+    <string name="location_right" translatable="false">&gt;&gt;</string>
+    <string name="reset">Varsayılan</string>
+    <string name="toogle_last_app_help">Son uygulamaya geç</string>
+    <string name="kill_all_apps_help">Tüm uygulamaları sonlandır</string>
+    <string name="kill_other_apps_help">Diğer uygulamaları sonlandır</string>
+    <string name="settings_help">Ayarlar</string>
+    <string name="home_help">Ev</string>
+    <string name="toogle_last_app">Son uygulamaya geç</string>
+    <string name="kill_all_apps">Tüm uygulamaları sonlandır</string>
+    <string name="kill_other_apps">Diğer uygulamaları sonlandır</string>
+    <string name="settings">Ayarlar</string>
+    <string name="home">Ev</string>
+    <string name="buttons_title">Butonlar</string>
+    <string name="buttons_summary">Ugulama görünümünde görüntülenecek butonlar</string>
+    <string name="auto_hide_handle">Kendiliğinden Gizle</string>
+    <string name="auto_hide_handle_summary">Uygulamayı etkinleştirmek için çift kaydırın</string>
+    <string name="no_recent_apps_title">Son uygulama yok</string>
+    <string name="drag_handle_opacity_title">Saydamlık</string>
+    <string name="drag_handle_enable_title">Etkinleştir</string>
+    <string name="drag_handle_enable_summary">Uygulama farklı bir yöntemle başlatılıyorsa kapatın</string>
+    <string name="allapps_help">Uygulamalar Çekmecesi</string>
+    <string name="allapps">Uygulamalar Çekmecesi</string>
+    <string name="dim_behind_title">Arka planı karart</string>
+    <string name="dim_behind_summary">Saydamlık katmanını tam ekrana yay</string>
+</resources>
