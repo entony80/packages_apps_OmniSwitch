@@ -23,12 +23,6 @@ import java.util.List;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
-import android.hardware.input.InputManager;
-import android.os.Handler;
-import android.os.SystemClock;
-import android.view.InputDevice;
-import android.view.KeyCharacterMap;
-import android.view.KeyEvent;
 
 public class Utils {
 
@@ -74,7 +68,7 @@ public class Utils {
         }
         return label;
     }
-
+    
     public static void buttonStringToArry(String buttonString, boolean[] buttons){
         String[] splitParts = buttonString.split(",");
         for(int i = 0; i < splitParts.length; i++){
@@ -85,7 +79,7 @@ public class Utils {
             }
         }
     }
-
+    
     public static String buttonArrayToString(boolean[] buttons){
         String buttonString = "";
         for(int i = 0; i < buttons.length; i++){
@@ -101,7 +95,7 @@ public class Utils {
         }
         return buttonString;
     }
-
+    
     public static boolean[] getDefaultButtons(){
         boolean[] buttons = new boolean[SettingsActivity.NUM_BUTTON];
         for(int i = 0; i < buttons.length; i++){
@@ -109,35 +103,4 @@ public class Utils {
         }
         return buttons;
     }
-
-    public static boolean[] getDefaultSpeedSwitchButtons(){
-        boolean[] buttons = new boolean[SettingsActivity.NUM_SPEED_SWITCH_BUTTON];
-        for(int i = 0; i < buttons.length; i++){
-            buttons[i] = true;
-        }
-        return buttons;
-    }
-
-    public static void triggerVirtualKeypress(final Handler handler, final int keyCode) {
-      final InputManager im = InputManager.getInstance();
-      long now = SystemClock.uptimeMillis();
-
-      final KeyEvent downEvent = new KeyEvent(now, now, KeyEvent.ACTION_DOWN,
-              keyCode, 0, 0, KeyCharacterMap.VIRTUAL_KEYBOARD, 0,
-              KeyEvent.FLAG_FROM_SYSTEM | KeyEvent.FLAG_VIRTUAL_HARD_KEY, InputDevice.SOURCE_CLASS_BUTTON);
-      final KeyEvent upEvent = KeyEvent.changeAction(downEvent,
-              KeyEvent.ACTION_UP);
-
-      handler.post(new Runnable(){
-          @Override
-          public void run() {
-              im.injectInputEvent(downEvent,InputManager.INJECT_INPUT_EVENT_MODE_ASYNC);
-          }});
-
-      handler.postDelayed(new Runnable(){
-        @Override
-        public void run() {
-            im.injectInputEvent(upEvent, InputManager.INJECT_INPUT_EVENT_MODE_ASYNC);
-        }}, 20);
-  }
 }

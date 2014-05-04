@@ -39,6 +39,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class IconPackHelper {
+    private static final String TAG = "IconPackHelper";
+
     static final String ICON_MASK_TAG = "iconmask";
     static final String ICON_BACK_TAG = "iconback";
     static final String ICON_UPON_TAG = "iconupon";

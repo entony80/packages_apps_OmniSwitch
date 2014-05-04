@@ -19,6 +19,7 @@ package org.omnirom.omniswitch.ui;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -33,6 +34,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Point;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -50,6 +52,8 @@ import android.widget.TextView;
 
 public class FavoriteDialog extends AlertDialog implements
         DialogInterface.OnClickListener, DialogInterface.OnDismissListener {
+    private static final String TAG = "FavoriteDialog";
+
     private LayoutInflater mInflater;
     private List<String> mFavoriteList;
     private SettingsActivity mContext;
@@ -222,6 +226,10 @@ public class FavoriteDialog extends AlertDialog implements
         mAddFavoriteDialog = new AddFavoriteDialog(getContext());
         mAddFavoriteDialog.setOnDismissListener(this);
         mAddFavoriteDialog.show();
+    }
+
+    private Drawable getDefaultActivityIcon() {
+        return mContext.getResources().getDrawable(R.drawable.ic_default);
     }
 
     public void applyChanges(List<String> favoriteList) {

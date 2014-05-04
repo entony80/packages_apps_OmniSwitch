@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2014 The OmniROM Project
+ *  Copyright (C) 2013 The OmniROM Project
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,37 +20,38 @@ package org.omnirom.omniswitch.ui;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
-import android.widget.TextView;
+import android.widget.ImageButton;
 
-public class PackageTextView extends TextView {
+public class GlowImageButton extends ImageButton {
 
-    private String mIntent;
     private Drawable mOriginalImage;
-
-    public PackageTextView(Context context) {
+    private Drawable mGlowImage;
+    
+    public GlowImageButton(Context context) {
         super(context);
     }
-    public PackageTextView(Context context, AttributeSet attrs) {
+    
+    public GlowImageButton(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public PackageTextView(Context context, AttributeSet attrs, int defStyle) {
+    public GlowImageButton(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
-
-    public void setIntent(String intent) {
-        mIntent = intent;
-    }
-
-    public String getIntent(){
-        return mIntent;
-    }
-
+    
     public void setOriginalImage(Drawable image){
         mOriginalImage = image;
     }
-
+    
     public Drawable getOriginalImage(){
         return mOriginalImage;
+    }
+    
+    public void setGlowImage(Drawable image){
+        mGlowImage = image;
+    }
+
+    public Drawable getGlowImage(){
+        return mGlowImage;
     }
 }
