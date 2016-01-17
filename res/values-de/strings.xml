@@ -57,7 +57,6 @@
     <string name="location_left">Links</string>
     <string name="location_right">Rechts</string>
     <string name="reset">Standard</string>
-    <string name="toggle_last_app">Letzte App</string>
     <string name="toggle_last_app_help">Zur letzten App wechseln</string>
     <string name="kill_all_apps_help">Alle Apps beenden</string>
     <string name="kill_other_apps_help">Die anderen Apps beenden</string>
