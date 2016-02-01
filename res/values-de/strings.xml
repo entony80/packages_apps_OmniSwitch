@@ -17,8 +17,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- <string name="app_name" translatable="false">OmniSwitch</string> -->
     <string name="package_stop_task_title">Stop</string>
     <string name="package_inspect_item_title">App Info</string>
+    <!-- <string name="recents_settings_title" translatable="false">OmniSwitch</string> -->
     <string name="start_on_boot_title">Beim Booten starten</string>
     <string name="start_on_boot_summary">Aktivieren beim Gerätestart</string>
     <string name="opacity_title">Transparenz</string>
@@ -26,11 +28,8 @@
     <string name="animate_title">Animieren</string>
     <string name="animate_title_summary">Animation beim Anzeigen / Verstecken</string>
     <string name="adjust_handle_title">Position und Größe</string>
-    <string name="adjust_handle_help">Bewege und ändere die Größe des Aufziehbereichs.\nDrücke die Taste, um zur linken oder rechten Displayseite zu wechseln.</string>
-    <string name="sc_drag_handle_title">Verhalten Aufziehbereich</string>
-    <string name="sc_drag_handle_body">\nZum Öffnen horizontal wischen oder lange gedrückt halten\nZum Schließen Taste drücken oder außerhalb berühren</string>
-    <string name="sc_favorite_title">Favorisierte Apps</string>
-    <string name="sc_favorite_body">\nÖffnet Anzeige der favorisierten Apps.</string>
+    <string name="adjust_handle_help">Bewege und ändere die Größe des Aufziehbereichs</string>
+    <!-- strings removed for 01/2016 update -->
     <string name="icon_size_normal">Normal</string>
     <string name="icon_size_small">Klein</string>
     <string name="icon_size_large">Groß</string>
@@ -52,8 +51,8 @@
     <string name="favorite_apps_config_summary">Apps definieren, die in der Favoritenansicht angezeigt werden</string>
     <string name="favorite_apps_add_dialog_title">Apps hinzufügen</string>
     <string name="favorite_add">Hinzufügen\u2026</string>
-    <string name="location_left">Links</string>
-    <string name="location_right">Rechts</string>
+    <!-- <string name="location_left" translatable="false">&lt;&lt;</string> -->
+    <!-- <string name="location_right" translatable="false">&gt;&gt;</string> -->
     <string name="reset">Standard</string>
     <string name="toggle_last_app_help">Zur letzten App wechseln</string>
     <string name="kill_all_apps_help">Alle Apps beenden</string>
@@ -101,14 +100,14 @@
     <string name="speed_switch_button_summary">Aktionstasten für die Schnellumschalter-Ansicht konfigurieren</string>
     <string name="speed_switch_items_summary">max. Anzahl der Objekte einer Ebene</string>
     <string name="speed_switch_item">Limit der Ebenenobjekte</string>
-    <string name="sc_quick_switcher_title">Schnellumschalter</string>
-    <string name="sc_quick_switcher_body">\nNach oben oder unten bewegen, um Ebenen zu wechseln.\n\nNach links oder rechts bewegen, um zwischen Objekten der Ebene zu wechseln.</string>
-    <string name="sc_quick_switcher_empty_body">\nKeine laufenden Apps oder Favoriten vorhanden.\n\nNach oben oder unten bewegen, um Ebenen zu wechseln.\n\nNach links oder rechts bewegen, um zwischen Objekten der Ebene zu wechseln.</string>
+    <!-- strings removed for 01/2016 update -->
     <string name="immersive_mode">Vollbildmodus</string>
     <string name="immersive_mode_help">Vollbildmodus ein-/ausschalten</string>
     <string name="package_add_favorite_title">Zu Favoriten hinzufügen</string>
     <string name="package_remove_favorite_title">Aus Favoriten entfernen</string>
     <string name="open_favorite_help">Öffne/Schließe Favoritenansicht</string>
+   <string name="flat_style_summary">Benutze einen einfarbigen Hintergrund für Use solid background for overlay view</string>
+    <string name="flat_style_title">Flacher Stil</string>
     <string name="button_pos_title">Tastenposition</string>
     <string name="button_pos_top">Oben/Links</string>
     <string name="button_pos_bottom">Unten/Rechts</string>
@@ -144,4 +143,6 @@
     <string name="menu">Menü</string>
     <string name="menu_help">Menü</string>
     <string name="enable_title">Aktivieren</string>
+    <string name="adjust_handle_width">Breite</string>
+    <string name="adjust_handle_position">Position</string>
 </resources>
